@@ -1,0 +1,17 @@
+{
+	"name": "allegedwizard/simple-calendar-php",
+	"description": "Generates 7x6 sequence calendar arrays for a given month/year input.",
+	"type": "library",
+	"authors": [
+		{
+			"name": "Marty Eason",
+			"email": "martye@clockworkwp.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"AllegedWizard\\SimpleCalendar\\": "src/"
+		}
+	},
+	"require": {}
+}
