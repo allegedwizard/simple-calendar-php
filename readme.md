@@ -2,6 +2,10 @@
 
 by [AllegedWizard](https://allegedwizard.com)
 
+```
+composer require allegedwizard/simple-calendar-php
+```
+
 Generates a calendar data model array for a given input Month and Year. 
 
 Can be used to build calendar views.
