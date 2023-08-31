@@ -145,9 +145,9 @@ class SimpleCalendar
      * Overridable wrapper for PHP date( $format, $timestamp ) function.
      * @param $format
      * @param $timestamp
-     * @return mixed
+     * @return string
      */
-    protected function _formatDate( $format, $timestamp ) : mixed {
+    protected function _formatDate( $format, $timestamp ) {
         $date_function = $this->date_function;
         if ( !is_callable( $date_function ) ) {
             $date_function = 'date';

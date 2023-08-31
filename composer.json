@@ -8,7 +8,6 @@
 			"email": "martye@clockworkwp.com"
 		}
 	],
-	"minimum-stability": "stable",
 	"autoload": {
 		"psr-4": {
 			"AllegedWizard\\SimpleCalendar\\": "src/"
