@@ -3,7 +3,7 @@
 namespace AllegedWizard\SimpleCalendar;
 
 /**
- * Generates 7x6 sequence calendar arrays for a given month/year input.
+ * Generates 7x6 sequence calendar array model for a given month/year input.
  */
 class SimpleCalendar
 {

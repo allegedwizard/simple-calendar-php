@@ -2,17 +2,17 @@
 // This test loads the class directly, but ideally use Composer in your project.
 require_once __DIR__ . '/../src/SimpleCalendar.php';
 
-// Instantiate the SimplarCalendar class with a month and date.
-$month = 'October';
+// Instantiate the SimpleCalendar class with a month and date.
+$month = 'August';
 $year = 2023;
 $calendar = new \AllegedWizard\SimpleCalendar\SimpleCalendar( $month, $year );
 
 // Optionally specify the date formatter function, ie: 'wp_date' for WordPress.
 // If the function doesn't exist, the default PHP date function is used.
-$calendar->setDateFunction( 'wp_date' );
+// $calendar->setDateFunction( 'wp_date' );
 
 // Optionally specify the first calendar day of week. Defaults to Sunday.
-$calendar->setFirstDayOfWeek( 'Monday' );
+//$calendar->setFirstDayOfWeek( 'Monday' );
 
 $month = $calendar->getMonth();
 $model = $calendar->toArray();
@@ -86,6 +86,11 @@ $example_calendar_html = ob_get_clean();
 
 <div class="container">
     <?php echo $example_calendar_html; ?>
+    <hr>
+    <pre>
+// Example output of:
+<strong>$calendar = new SimpleCalendar( '<?= $month; ?>', <?= $year; ?> );</strong>
+<strong>$calendar->toArray()<br></strong><?php print_r( $model ); ?></pre>
 </div>
 </body>
 </html>
